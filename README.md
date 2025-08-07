@@ -36,7 +36,7 @@ Using the BRFSS 2015 dataset (253,680 respondents), we focus on predicting diabe
 
 ## Dataset
 Original dataset: [CDC BRFSS 2015](https://www.kaggle.com/alexteboul/diabetes-health-indicators-dataset)  
-Dataset notebook: (https://www.kaggle.com/code/alexteboul/diabetes-health-indicators-dataset-notebook)  
+Dataset notebook: [CDC BRFSS 2015 notebook](https://www.kaggle.com/code/alexteboul/diabetes-health-indicators-dataset-notebook)  
 
 
 Fuad Abdo
