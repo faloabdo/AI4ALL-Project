@@ -1,42 +1,62 @@
-# Diabetes Risk Prediction Tool
-### AI4All Project | Fuad Abdo
+# AI4All Project - Diabetes Risk Prediction
 
+![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)
+![Pandas](https://img.shields.io/badge/Pandas-150458.svg?logo=pandas&logoColor=white)
+![Scikit-learn](https://img.shields.io/badge/Scikit--learn-F7931E.svg?logo=scikit-learn&logoColor=white)
+![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B.svg?logo=Streamlit&logoColor=white)
 
-This project analyzes key risk factors for diabetes and builds predictive models to assess individual diabetes risk based on health indicators.
+This project analyzes key risk factors for diabetes and builds predictive models to assess individual diabetes risk based on health indicators from CDC's behavioral risk factor data.
 
 ## Background
-This project was developed for AI4All, and it applies machine learning to CDC health data to:
-- Identify the strongest predictors of diabetes
-- Compare model performance (Random Forest vs Logistic Regression)
-- Build a clinical risk assessment tool
 
-Using the BRFSS 2015 dataset (253,680 respondents), we focus on predicting diabetes risk to help with early intervention.
+This project was developed for AI4All's Applied AI program, where I applied machine learning techniques to public health data. My work focuses on:
+
+- Identifying the most significant predictors of diabetes from 21 health indicators
+- Comparing performance between different machine learning approaches
+- Developing a practical risk assessment tool for potential clinical use
+
+Using the Behavioral Risk Factor Surveillance System (BRFSS) 2015 dataset, we created models that can help with early diabetes risk detection and intervention planning.
 
 ## Key Findings
-1. **Top Risk Factors**:
-   - General Health (35% impact)
-   - High Blood Pressure (25%)
-   - BMI (25%)
-   - Age (15%)
 
-2. **Model Performance**:
-   | Model               | Accuracy | ROC AUC |
-   |---------------------|----------|---------|
-   | Random Forest       | 75%      | 0.83    |
-   | Logistic Regression | 75%      | 0.82    |
+### 1. Top Risk Factors
+Our analysis revealed these primary risk factors and their relative importance:
 
-3. **Risk Calculator**:
-   - Streamlit web app
- 
+- **General Health (35% impact)**: Self-reported health status was the strongest predictor
+- **High Blood Pressure (25%)**: Hypertension showed significant correlation
+- **BMI (25%)**: Body Mass Index, especially values above 30
+- **Age (15%)**: Particularly ages 45+ with non-linear risk increase
+
+### 2. Model Performance Comparison
+We evaluated two machine learning approaches:
+
+| Model               | Accuracy | ROC AUC | Recall | Precision |
+|---------------------|----------|---------|--------|-----------|
+| Random Forest       | 75%      | 0.83    | 80%    | 73%       | 
+| Logistic Regression | 75%      | 0.82    | 76%    | 74%       |
+
+### 3. Risk Calculator Implementation
+We developed an interactive web application with Real-time risk calculation and Personalized health recommendations using Streamlit.
+
 ## Next Steps
-- compare with recent dataset 
-- Test with polynomial features
-- Incorporate more health indicators
-- Clinical validation study
+
+Future improvements planned:
+- Compare with more recent BRFSS datasets (2020-2023)
+- Test polynomial feature transformations
+- Incorporate additional health indicators like family history
+- Conduct clinical validation studies
+- Expand to predict pre-diabetes risk
 
 ## Dataset
-Original dataset: [CDC BRFSS 2015](https://www.kaggle.com/alexteboul/diabetes-health-indicators-dataset)  
-Dataset notebook: [CDC BRFSS 2015 notebook](https://www.kaggle.com/code/alexteboul/diabetes-health-indicators-dataset-notebook)  
 
+**Primary Dataset:**  
+[CDC BRFSS 2015 Diabetes Dataset](https://www.kaggle.com/alexteboul/diabetes-health-indicators-dataset)  
 
-Fuad Abdo
+**Exploratory Analysis:**  
+[Dataset Notebook](https://www.kaggle.com/code/alexteboul/diabetes-health-indicators-dataset-notebook)
+
+## Prepared by:
+
+**Fuad Abdo** 
+
+## Acknowledgments
