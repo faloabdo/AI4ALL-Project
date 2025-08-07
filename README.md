@@ -1,40 +1,33 @@
-# AI4All Project - Diabetes Risk Prediction
+# Diabetes Risk Prediction Tool
+### AI4All Project | Team Fuad Abdo
 
-This project analyzes key risk factors for diabetes and builds predictive models to assess individual diabetes risk based on health indicators.
+![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)
+![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B.svg?logo=Streamlit&logoColor=white)
+![Scikit-learn](https://img.shields.io/badge/Scikit--learn-F7931E.svg?logo=scikit-learn&logoColor=white)
 
-## Background
-This project was developed for AI4All, and it applies machine learning to CDC health data to:
-- Identify the strongest predictors of diabetes
-- Compare model performance (Random Forest vs Logistic Regression)
-- Build a clinical risk assessment tool
+## Project Overview
+A machine learning system that identifies key diabetes risk factors and provides personalized risk assessments through an interactive web application.
 
-Using the BRFSS 2015 dataset (253,680 respondents), we focus on predicting diabetes risk to help with early intervention.
+## Key Features
+- **Predictive Modeling**: 
+  - Random Forest (AUC: 0.83)
+  - Logistic Regression (AUC: 0.82)
+- **Risk Calculator**:
+  - Interactive Streamlit interface
+  - Personalized risk scores (5%-95% range)
+  - Clinical recommendations
+- **Feature Analysis**:
+  - Identified 4 dominant risk factors
+  - Fairness validation across demographics
 
-## Key Findings
-1. **Top Risk Factors**:
-   - General Health (35% impact)
-   - High Blood Pressure (25%)
-   - BMI (25%)
-   - Age (15%)
-
-2. **Model Performance**:
-   | Model               | Accuracy | ROC AUC |
-   |---------------------|----------|---------|
-   | Random Forest       | 75%      | 0.83    |
-   | Logistic Regression | 75%      | 0.82    |
-
-3. **Risk Calculator**:
-   - Streamlit web app
- 
-## Next Steps
-- Incorporate more health indicators
-- Test with polynomial features
-- Develop mobile version
-- Clinical validation study
-
-## Dataset
-Origianl dataset: [CDC BRFSS 2015](https://www.kaggle.com/alexteboul/diabetes-health-indicators-dataset)  
-Dataset notebook: (https://www.kaggle.com/code/alexteboul/diabetes-health-indicators-dataset-notebook)  
-
-
-Fuad Abdo
+## Technical Implementation
+```python
+def predict_risk(bmi, age, health, bp):
+    # Non-linear age mapping
+    age_risk = {1:0.1, 2:0.15, ..., 13:0.9}[age]
+    
+    # Weighted factors
+    risk_score = (bmi*0.25 + age_risk*0.15 + 
+                 health*0.35 + bp*0.25)
+    
+    return 1/(1 + exp(-4*(risk_score - 0.5)))
