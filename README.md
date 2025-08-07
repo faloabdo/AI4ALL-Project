@@ -1,6 +1,6 @@
 # AI4All Project - Diabetes Risk Prediction
 
-![Google Colab](https://img.shields.io/badge/Google_Colab-F9AB00.svg?logo=google-colab&logoColor=white)
+[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/faloabdo/Demo/blob/main/draft4.ipynb)
 ![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B.svg?logo=Streamlit&logoColor=white)
 
 This project analyzes key risk factors for diabetes and builds predictive models to assess individual diabetes risk based on health indicators from CDC's behavioral risk factor data.
