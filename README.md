@@ -1,8 +1,6 @@
 # AI4All Project - Diabetes Risk Prediction
 
-![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)
-![Pandas](https://img.shields.io/badge/Pandas-150458.svg?logo=pandas&logoColor=white)
-![Scikit-learn](https://img.shields.io/badge/Scikit--learn-F7931E.svg?logo=scikit-learn&logoColor=white)
+![Google Colab](https://img.shields.io/badge/Google_Colab-F9AB00.svg?logo=google-colab&logoColor=white)
 ![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B.svg?logo=Streamlit&logoColor=white)
 
 This project analyzes key risk factors for diabetes and builds predictive models to assess individual diabetes risk based on health indicators from CDC's behavioral risk factor data.
