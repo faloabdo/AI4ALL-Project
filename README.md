@@ -1,4 +1,5 @@
-# AI4All Project - Diabetes Risk Prediction
+# Diabetes Risk Prediction
+# AI4All Project - Healthcare & Life Sciences
 
 
 This project analyzes key risk factors for diabetes and builds predictive models to assess individual diabetes risk based on health indicators from CDC's behavioral risk factor data.
