@@ -56,4 +56,3 @@ Future improvements planned:
 
 **Fuad Abdo** 
 
-## Acknowledgments
