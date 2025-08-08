@@ -5,10 +5,10 @@ def predict_diabetes(bmi, age, gen_hlth, high_bp):
     """Realistic prediction with proper scaling"""
 
     weights = {
-        'BMI': 0.31,      # 0.543 / (0.634+0.543+0.424+0.363)
-        'Age': 0.24,       # 0.424 / sum
-        'GenHlth': 0.36,   # 0.634 / sum (most important)
-        'HighBP': 0.21     # 0.363 / sum
+        'BMI': 0.31,      
+        'Age': 0.24,      
+        'GenHlth': 0.36,  
+        'HighBP': 0.21    
     }
     
     scaled_bmi = min(bmi, 40) / 40  
